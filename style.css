@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-size: 4em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 02px 6px #000;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";
+    background-image: linear-gradient(#00bc40, #4c3ae3);
+    /* background-color: gradient(#00BC40 #4C3AE3); */
+}
+.counter {
+    display: none;
+    margin-top: 20px;
+    color: rgb(239, 230, 230);
+}
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+label {
+    color: #fff;
+    font-size: 20px;
+}
+button {
+    color: #fff;
+    background-image: linear-gradient(#ff9f4a, #ff3c83);
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+button:hover {
+    transform: scale(1.1);
+}
+
+.day,
+.hour,
+.minute,
+.second {
+    font-size: 2em;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+input {
+    font-family: "Roboto";
+    font-weight: bold;
+}
+input:focus {
+    /* border: none; */
+    outline: none;
+}
+
+.input-text {
+    width: 70px;
+    height: 25px;
+}
+.input-date {
+    display: flex;
+    gap: 10px;
+}
+.input-date div {
+    /* text-align: center; */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.input-time {
+    gap: 10px;
+    display: flex;
+}
+
+.input-time div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}

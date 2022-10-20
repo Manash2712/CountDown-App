@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CountDown</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h2>Welcome to Count Down App!</h2>
+                <div class="counter">
+                    <div class="countdown">
+                        <div class="container-day">
+                            <h3 class="day">time</h3>
+                            <h3>Day</h3>
+                        </div>
+                        <div class="container-hour">
+                            <h3 class="hour">hour</h3>
+                            <h3>Hour</h3>
+                        </div>
+                        <div class="container-minute">
+                            <h3 class="minute">minute</h3>
+                            <h3>Minute</h3>
+                        </div>
+                        <div class="container-second">
+                            <h3 class="second">second</h3>
+                            <h3>Second</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="input">
+                    <div class="input-date">
+                        <div id="input-month">
+                            <label for="month">Month</label>
+                            <input
+                                type="number"
+                                min="1"
+                                max="12"
+                                class="input-text"
+                                name="month"
+                            />
+                        </div>
+                        <div id="input-day">
+                            <label for="day">Month Day</label>
+                            <input
+                                type="number"
+                                min="1"
+                                max="31"
+                                class="input-text"
+                                name="monthDay"
+                            />
+                        </div>
+                        <div id="input-year">
+                            <label for="month">Year</label>
+                            <input
+                                type="number"
+                                class="input-text"
+                                name="year"
+                            />
+                        </div>
+                        <!-- <div id="input-year">
+                            <label for="month">Year</label>
+                            <input type="number" class="input-text" />
+                        </div> -->
+                    </div>
+
+                    <div class="input-time">
+                        <div id="input-time-day">
+                            <label for="day">Day</label>
+                            <input
+                                type="number"
+                                class="input-text"
+                                name="day"
+                            />
+                        </div>
+                        <div id="input-time-hour">
+                            <label for="day">Hour</label>
+                            <input
+                                type="number"
+                                class="input-text"
+                                name="hour"
+                            />
+                        </div>
+                        <div id="input-time-minute">
+                            <label for="day">Minute</label>
+                            <input
+                                type="number"
+                                class="input-text"
+                                name="minute"
+                            />
+                        </div>
+                    </div>
+
+                    <button action="submit" id="submit-btn">
+                        Start CountDown
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
